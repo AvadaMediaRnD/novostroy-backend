@@ -1,0 +1,11 @@
+{
+  "name": "API",
+  "version": "1.0.0",
+  "description": "Документация API.",
+  "title": "API documentation",
+  "url" : "http://novostroy.avada-media-dev1.od.ua/api",
+  "header": {
+    "title": "Общая информация",
+    "filename": "apidoc_header.md"
+  }
+}

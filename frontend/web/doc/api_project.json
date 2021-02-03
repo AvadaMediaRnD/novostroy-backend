@@ -1,0 +1,20 @@
+{
+  "name": "API",
+  "version": "1.0.0",
+  "description": "Документация API.",
+  "title": "API documentation",
+  "url": "http://novostroy.avada-media-dev1.od.ua/api",
+  "header": {
+    "title": "Общая информация",
+    "content": "<p>При успешном запросе, все информативные данные содержатся в объекте 'data'. \nВ блоке описания полей перечислены поля объекта 'data'.</p>\n<pre>\n{\n    \"code\": 100200,\n    \"status\": \"success\",\n    \"message\": \"\",\n    \"data\": {\n        // your data\n    }\n}\n</pre>\n<p>В параметре 'code' может возвращаться код ответа api.</p>\n<p>Описание основных кодов:</p>\n<pre>\n100200 - Успешный ответ\n100400 - Ошибка общего вида\n100401 - Ошибка авторизации\n100403 - Доступ запрещен\n100440 - Ошибка валидации\n</pre>\n<p>Параметр 'status' может содержать 'success' в случае успеха, или 'error' в случае ошибки</p>\n<p>Параметр 'message' может содержать дополнительное описание ошибки</p>\n<p>В случае некорректного запроса, ответ с ошибкой может иметь следующую структуру:</p>\n<pre>\n{\n    \"error\": {\n        \"name\": \"Unauthorized\",\n        \"message\": \"Your request was made with invalid credentials.\",\n        \"code\": 0,\n        \"status\": 401,\n        \"type\": \"yii\\\\web\\\\UnauthorizedHttpException\"\n    }\n}\n</pre>\n<p>В данном случае, возвращен результат сообщения exception при ошибке авторизации</p>\n"
+  },
+  "sampleUrl": false,
+  "defaultVersion": "0.0.0",
+  "apidoc": "0.3.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2018-08-15T13:29:45.553Z",
+    "url": "http://apidocjs.com",
+    "version": "0.17.6"
+  }
+}

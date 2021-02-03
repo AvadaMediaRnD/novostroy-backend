@@ -1,0 +1,21 @@
+# Mod_Autoindex
+<IfModule mod_autoindex.c>
+# Disable Indexes
+Options -Indexes
+</IfModule>
+
+# Mod_Rewrite
+<IfModule mod_rewrite.c>
+# Enable symlinks
+Options +SymLinksIfOwnerMatch
+# Enable mod_rewrite
+RewriteEngine On
+
+# Redirect
+RewriteRule ^api/(.*)$ /api/web/$1 [L]
+RewriteRule ^front/(.*)$ /frontend/web/$1 [L]
+#RewriteRule ^doc/(.*)$ /frontend/web/doc/$1 [L]
+RewriteRule ^(.*)$ /backend/web/$1 [L]
+
+</IfModule>
+

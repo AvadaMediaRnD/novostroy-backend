@@ -1,0 +1,8 @@
+.form-control.no-fade[readonly],
+.form-control.no-fade[disabled]{
+    background-color: #fff;
+}
+.select2-container--krajee .select2-selection--multiple .select2-search--inline .select2-search__field {
+    min-width: 15em;
+}
+
